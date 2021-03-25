@@ -1,0 +1,126 @@
+{{ $author:= site.Data.author }}
+{{ if (index site.Data site.Language.Lang).author }}
+  {{ $author = (index site.Data site.Language.Lang).author }}
+{{ end }}
+
+{{ $sections:= site.Data.sections }}
+{{ if (index site.Data site.Language.Lang).sections }}
+  {{ $sections = (index site.Data site.Language.Lang).sections }}
+{{ end }}
+
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+{{ $author:= site.Data.author }}
+{{ if (index site.Data site.Language.Lang).author }}
+  {{ $author = (index site.Data site.Language.Lang).author }}
+{{ end }}
+
+{{ $authorImage:= "/images/default-avatar.png" }}
+{{ if $author.image }}
+  {{ $authorImage = $author.image }}
+{{ end }}
+{{ $authorImage := resources.Get $authorImage }}
+{{ $authorImage := $authorImage.Fit "200x200" }}
+
+{{ $name:="Jane Doe" }}
+{{ if $author.nickname }}
+  {{ $name = $author.nickname }}
+{{ else if $author.name }}
+  {{ $name = $author.name }}
+{{ end }}
+
+{{ $sections:= site.Data.sections }}
+{{ if (index site.Data site.Language.Lang).sections }}
+  {{ $sections = (index site.Data site.Language.Lang).sections }}
+{{ end }}
+
+<div class="container anchor p-lg-5 about-section" id="{{ $sectionID }}">
+  <div class="row pt-sm-2 pt-md-4 align-self-center">
+    <!-- summary -->
+    <div class="col-sm-6">
+      <h3 class="p-1">{{ $author.name }}</h3>
+      {{ if .designation }}
+      <h5 class="p-1">
+        {{ .designation }}
+        {{ if .company }}
+        {{ i18n "at"}} <a href="{{ .company.url }}">{{ .company.name }}</a>
+        {{ end }}
+      </h5>
+      {{ end }}
+      <p class="p-1 text-justify">
+        {{ .summary | markdownify }}
+      </p>
+      <div class="text-container ml-auto">
+        <ul class="social-link d-flex">
+          {{ range .socialLinks }}
+          <li>
+            {{ if eq .name "Email" }}
+              <a href="mailto:{{ .url }}" target="/"><i class="{{ .icon }}"></i></a>
+            {{ else }}
+              <a href="{{ .url }}" target="/"><i class="{{ .icon }}"></i></a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ if .resume }}
+      <a href="{{ .resume | relURL }}" target="#"
+        ><button class="btn btn-dark">{{ i18n "resume"}}</button></a
+      >
+      {{ end }}
+    </div>
+    <!-- soft skills circular-progressbar -->
+    <div class="col-sm-6 pt-10 pl-md-10 pl-sm-50 pt-sm-50">
+
+      {{ if .designation }}
+
+    <!--  <img src="{{ $authorImage.RelPermalink }}"
+        class=" mx-auto d-block img-fluid"
+      /> -->
+
+      {{ end }}
+
+      {{ if .resume }}
+
+
+      {{ end }}
+
+      <div class="container content text-center">
+
+        <!-- <h1 class="greeting"> {{ $author.greeting }} {{ $name }}</h1> -->
+        <div class="typing-carousel">
+          <span id="ityped" class="ityped"></span>
+          <span class="ityped-cursor"></span>
+        </div>
+        <ul id="typing-carousel-data">
+          {{ if $author.summary }}
+            {{ range $author.summary }}
+              <li>{{ . }}</li>
+            {{ end}}
+          {{ end }}
+        </ul>
+        {{ if $sections }}
+          {{ range first 1 (where (sort $sections "section.weight") ".section.enable" true) }}
+            {{ $sectionID := replace (lower .section.name) " " "-"  }}
+            {{ if .section.id }}
+              {{ $sectionID = .section.id }}
+            {{ end }}
+            <!--<a href="#{{ $sectionID }}"><i class="arrow bounce fa fa-chevron-down"></i></a>-->
+
+          {{ end }}
+        {{ end }}
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+</div>

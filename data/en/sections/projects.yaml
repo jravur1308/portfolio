@@ -1,0 +1,74 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Academic
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+- name: Heroku deployment
+  logo: /images/sections/projects/heroku.png
+  #role: Contributor
+  #timeline: "March 2018 - Present"
+  repo: https://car-price-prediction-in-rupees.herokuapp.com # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Car resale price prediction deployed using herokuapp.
+  tags: ["professional", "kubernetes", "cloud"]
+
+- name: predicting chocolate ratings
+  logo: /images/sections/projects/tensorflow.png
+  #role: Developer
+  # timeline: "Jun 2018 - Present"
+  repo: https://github.com/jravur1308/predicting_chocolate_rating
+  #url: "predicting chocolate ratings"
+  summary: predicting chocolate ratings using TensorFlow.
+  tags: ["professional", "machine-learning","academic"]
+
+
+- name: tableau
+  logo: /images/sections/projects/tab.png
+  #role: Nothing
+  #timeline: "Oct 2019 - Dec 2019"
+  repo: https://public.tableau.com/profile/phalgun.ravuri#!/
+  #url: ""
+  summary: Effective data visualization in context of data science - includes insights modelling, graphical Communication
+  tags: ["hobby", "fun"]
+
+- name: Web development
+  logo: /images/sections/projects/toha.png
+  #role: Owner
+  # timeline: "Jun 2019 - Present"
+  repo: https://github.com/jravur1308/portfolio-site
+  summary: My personal portfolio website.
+  tags: ["hobby","hugo","theme","professional"]
+
+- name: Video games sale prediction
+  logo: /images/sections/projects/tensorflow.png
+  #role: Owner
+  # timeline: "Jun 2019 - Present"
+  repo: https://github.com/jravur1308/Video_games_sale_prediction
+  summary: My personal portfolio website.
+  tags: ["hobby","hugo","theme","professional"]
+
+- name: space mission success prediction
+  logo: /images/sections/projects/tensorflow.png
+  #role: Owner
+  # timeline: "Jun 2019 - Present"
+  repo: https://github.com/jravur1308/space_mission_success_prediction
+  summary: My personal portfolio website.
+  tags: ["hobby","hugo","theme","professional"]

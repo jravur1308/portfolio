@@ -1,0 +1,78 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+#- name: Kubernetes
+#  logo: "/images/sections/skills/kubernetes.png"
+#  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  # url: "https://kubernetes.io/"
+
+- name: Python
+  logo: "/images/sections/skills/python.png"
+  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program"
+
+
+- name: R Development
+  logo: "/images/sections/skills/R.png"
+  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+  # url: "https://golang.org/"
+
+- name: Cloud deployment
+  logo: "/images/sections/skills/aws2.jpg"
+  summary: "End to End machine learning model deployment with Flask, AWS."
+
+- name: Docker
+  logo: "/images/sections/skills/docker.svg"
+  summary: "A Docker is a set of platform service products that use OS-level virtualization to deliver software in packages called containers."
+  # url: "https://www.docker.com/"
+
+- name: Tableau
+  logo: "/images/sections/skills/tab.jpeg"
+  summary: "Created various charts, visualizations in Tableau. Please click to visit my tableau public page"
+  url : https://public.tableau.com/profile/phalgun.ravuri#!/
+
+#- name: Prometheus
+  logo: "/images/sections/skills/prometheus.png"
+  summary: "Created various charts, visualizations in Tableau. Please click to visit my tableau public page."
+  url: https://public.tableau.com/profile/phalgun.ravuri#!/
+
+#- name: Linux
+##  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+
+- name: Git
+  logo: "/images/sections/skills/git.png"
+  summary: "Experienced with some git-based development. Mostly, used Github."
+  # url: "https://git-scm.com/"
+
+- name: TensorFlow
+  logo: "/images/sections/skills/tf.png"
+  summary: "Understanding of basics of using Keras with TensorFlow as its backend and used it to solve some basic image classification problems."
+
+- name: Python packages
+  logo: "/images/sections/skills/pack.png"
+  summary: "Working knowledge of some important packages like Scikit learn, Pandas, Numpy, Matplotlib etc."
+
+- name: NLTK
+  logo: "/images/sections/skills/python.png"
+  summary: "Used NLP in cleaning raw text data,Text categorization projects and text prediction projects, calculate important statistics from corpus, etc."
+
+- name: OpenCV
+  logo: "/images/sections/skills/openCV.png"
+  summary: "Used Open CV library for solving computer vision problems like image classification, identification, etc."
+
+- name: Neural Networks
+  logo: "/images/sections/skills/Ann.png"
+  summary: "Working knowledge of some important concepts in Artificial Neural Networks like CNN, RNN, LSTM etc."
+
+- name: Data Management
+  logo: "/images/sections/skills/db.png"
+  summary: "Knowledge in database theories, Structured Query Language, database design & conceptual/semantic data modeling"

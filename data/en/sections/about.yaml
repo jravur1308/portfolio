@@ -1,0 +1,89 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Information Systems student
+# your company information
+company:
+  name: UT Dallas.
+  url: "https://www.utdallas.edu"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/Phalguna_Ravuri_resume.pdf"
+
+# a summary about you
+summary: 'I am an aspiring data scientist pursuing my Masters degree. I build Data tools for [Data Science](https://en.wikipedia.org/wiki/Data_science) using Python. I am passionate about research involving Deep learning, Computer Vision & Artificial Intelligence . Sometimes, I like to work on projects with my Raspberry Pi, etc.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "phalguna.ravuri@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/jravur1308"
+
+- name: Stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "https://stackoverflow.com/users/15366558/phalgun-ravuri"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/phalguna-rjs/"
+
+
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Leadership
+  percentage: 85
+  color: blue
+- name: Team Work
+  percentage: 90
+  color: yellow
+- name: Communication
+  percentage: 85
+  color: pink
+- name: Hard Working
+  percentage: 85
+  color: green
+- name: Fast Learner
+  percentage: 85
+  color: sky
+- name: Problem Solving
+  percentage: 85
+  color: orange
+
+  name: "Phalguna Ravuri"
+  nickname: "Guna"
+  # greeting message before your name. it will default to "Hi! I am" if not provided
+  greeting: "Hi, I am "
+  image: "images/author/guna1.jpg"
+  # give your some contact information. they will be used in the footer
+  contactInfo:
+    email: "phalguna.ravuri@gmail.com"
+    phone: "+8138433976"
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"
+
+
+#summary:
+#  - I am a Developer
+#  - I am a Devops
+#  - I work on open-source projects
+#  - I love to work with some fun projects

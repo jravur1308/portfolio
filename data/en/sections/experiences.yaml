@@ -1,0 +1,55 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your experiences
+experiences:
+
+- company:
+    name: SkillBanc.
+    # url: "http://skillbanc.com"
+    location: VA
+    overview: SkillBanc provides Software Architectural Blueprints for Small, Medium & Large Enterprises.
+  positions:
+  - designation: Intern
+    start: Jan 2021
+    end: Present
+    responsibilities:
+    - Predicting stock price using sentiment analysis model, Finding the stock market daily patterns, creating a dashboard to identify patterns..
+    - Identifying Multi bagger stocks using machine learning and AI.
+    - Developed Artificial intelligent stock recommender tool using Deep Neural Networks and classification Algorithms.
+    - Used the AWS Sage Maker, EC2, ELB, S3, IAM to quickly build, train and deploy the machine learning models
+    - Used Text Mining and NLP techniques find the sentiment about the stocks, Applying NLP and text-based extraction techniques
+
+- company:
+    name: Qualcomm.
+    # url: "https://www.example.com"
+    location: India
+    # company overview
+    overview: Qualcomm creates IP, semiconductors, software & services related to wireless technology.
+  positions:
+  - designation: Senior Systems Engineer
+    start: Jun 2015
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: Mar 2018
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Led a team of 5 members to develop statistical models and implement analytics, & analysis on feedbacks and other text inputs for use in internal audit
+    - Create financial reporting and analysis to provide insights into 3rd party expenses and track and monitor costs per call and other financial data
+    - Oppurtunity to be part of a pioneer team, Lead,Supported and contributed to GLobal initiatives and projects
+    - Developed smart, compelling dashboards and reports to track key performance indicators (KPI’s), identify trends, and monitor company initiatives
+    - Segmented device complaints using techniques to extract features reducing 50% of manual work of audit team
+    - Defined, prepared & executed data loading tasks to prepare for regularly scheduled audits and root cause analysis as required by the Engineering team
+
+  - designation: Junior Systems Engineer
+    start: Dec 2013
+    end: Jun 2015
+    responsibilities:
+    - Devised bench tests for evaluation of parametric performance of cellular based SOC’s, implemented bench level screening procedures by using programmable test equipment. Monitored and managed website modifications, performed administrative tasks such as completing service tickets, provided direct assistance & training to users in operations of systems, customize SharePoint site
+    - Supported cloud & hybrid products Cisco WebEx, Jabber IM (cloud), CMR, WebEx teams Services along with conference endpoints connected to the cloud, provided highest level technical support to help resolve sophisticated user problems from on prem to cisco cloud

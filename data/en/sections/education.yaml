@@ -1,0 +1,58 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Masters in Information Technology Management
+  icon: fa-microscope
+  timeframe: 2019-2021
+  institution:
+    name: University of Texas at Dallas
+    url: "https://www.utdallas.edu"
+
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    courses:
+    - name: Programming for Data Science
+      achieved: 3.75
+      outOf: 4
+    - name: Advanced Data Analytics with R
+      achieved: 3.80
+      outOf: 4
+    - name: Predictive Analytics
+      achieved: 3.5
+      outOf: 4
+    - name: Data Visualization
+      achieved: 3.75
+      outOf: 4
+- name: Bachelors in Information Technology
+  icon: fa-graduation-cap
+  timeframe: 2008-2013
+  institution:
+    name: GVP College of Engineering
+    url: "http://www.gvpce.ac.in"
+
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    courses:
+    - name: Data Structures and Algorithm
+      achieved: 3.75
+      outOf: 4
+    - name: Cloud Computing
+      achieved: 3.80
+      outOf: 4
+    - name: Operating System
+      achieved: 3.5
+      outOf: 4
+    - name: Computer Networks
+      achieved: 3.75
+      outOf: 4
